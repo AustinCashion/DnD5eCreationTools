@@ -9,11 +9,21 @@ namespace Server.Managers.Implementations
     /// </summary>
     public class MonsterStepFlowManager : IMonsterStepFlowManager
     {
-        private readonly ILevelManager _levelManager;
+        private readonly ICorePropertiesManager _corePropertiesManager;
+        private readonly ICalculationManager _calculationManager;
+        private readonly ISpecialProperitesManager _specialProperitesManager;
 
-        public MonsterStepFlowManager(ILevelManager levelManager)
+        /// <summary>
+        /// Initializes new instance of MonsterStepFlowManager.
+        /// </summary>
+        /// <param name="corePropertiesManager">Core property manager to use.</param>
+        /// <param name="calculationManager">Calculation manager to use.</param>
+        /// <param name="specialProperitesManager">Special properity manager to use.</param>
+        public MonsterStepFlowManager(ICorePropertiesManager corePropertiesManager, ICalculationManager calculationManager, ISpecialProperitesManager specialProperitesManager)
         {
-            _levelManager = levelManager ?? throw new ArgumentNullException("levelManager");
+            _corePropertiesManager = corePropertiesManager ?? throw new ArgumentNullException("corePropertiesManager");
+            _calculationManager = calculationManager ?? throw new ArgumentNullException("calculationManager");
+            _specialProperitesManager = specialProperitesManager ?? throw new ArgumentNullException("specialProperitesManager");
         }
 
         /// <summary>
@@ -30,6 +40,7 @@ namespace Server.Managers.Implementations
             // TODO: Set Speed
             // TODO: Set Type
             // TODO: Set Alignment
+            // TODO: Set Languages
             // TODO: Set Level
             // TODO: Set Stats
 
@@ -47,7 +58,6 @@ namespace Server.Managers.Implementations
             // TODO: Set Special Traits, Actions, and Reactions
             // TODO: Set Damage Vulnerabilities, Resistances, Immunities
             // TODO: Set Condition Vulnerabilities, Resistances, Immunities
-            // TODO: Set Languages
 
             // TODO: Persist.
         }
