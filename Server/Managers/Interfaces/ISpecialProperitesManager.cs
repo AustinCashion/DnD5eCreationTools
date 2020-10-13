@@ -6,9 +6,9 @@
     public interface ISpecialProperitesManager
     {
         /// <summary>
-        /// Set special traits, actions, and reactions.
+        /// Set condition vulnerabilities, resistances, immunities.
         /// </summary>
-        public void SetSpecialTraits();
+        public void SetConditionStatuses();
 
         /// <summary>
         /// Set damage vulnerabilities, resistances, immunities.
@@ -16,8 +16,8 @@
         public void SetDamageStatuses();
 
         /// <summary>
-        /// Set condition vulnerabilities, resistances, immunities.
+        /// Set special traits, actions, and reactions.
         /// </summary>
-        public void SetConditionStatuses();
+        public void SetSpecialTraits();
     }
 }

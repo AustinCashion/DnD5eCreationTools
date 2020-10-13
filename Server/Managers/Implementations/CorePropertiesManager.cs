@@ -1,48 +1,71 @@
-﻿namespace Server.Managers.Interfaces
+﻿using Server.Managers.Interfaces;
+
+namespace Server.Managers.Implementations
 {
-    /// <summary>
-    /// Manages setting core properties.
-    /// </summary>
-    public interface ICorePropertiesManager
+    public class CorePropertiesManager : ICorePropertiesManager
     {
         /// <summary>
         /// Creates ability scores.
         /// </summary>
-        public void CreateAbilityScores(bool isRandom);
+        public void CreateAbilityScores(bool isRandom)
+        {
+
+        }
 
         /// <summary>
         /// Set alignment characteristic.
         /// </summary>
-        public void SetAlignment();
+        public void SetAlignment()
+        {
+
+        }
 
         /// <summary>
         /// Set languages.
         /// </summary>
-        public void SetLanguages();
+        public void SetLanguages()
+        {
+
+        }
 
         /// <summary>
         /// Set level characteristic.
         /// </summary>
-        public void SetLevel();
+        public void SetLevel()
+        {
+
+        }
 
         /// <summary>
         /// Set name characteristic.
         /// </summary>
-        public void SetName();
+        public void SetName()
+        {
+
+        }
 
         /// <summary>
         /// Set size characteristic.
         /// </summary>
-        public void SetSize();
+        public void SetSize()
+        {
+
+        }
 
         /// <summary>
         /// Set speed characteristic.
         /// </summary>
-        public void SetSpeed();
+        public void SetSpeed()
+        {
+
+        }
 
         /// <summary>
         /// Set type of creature characteristic.
         /// </summary>
-        public void SetType();
+        public void SetType()
+        {
+
+        }
     }
 }
