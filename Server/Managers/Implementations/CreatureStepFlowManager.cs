@@ -1,6 +1,6 @@
-﻿using System;
-
+﻿using Server.Enums;
 using Server.Managers.Interfaces;
+using System;
 
 namespace Server.Managers.Implementations
 {
@@ -9,6 +9,10 @@ namespace Server.Managers.Implementations
     /// </summary>
     public class CreatureStepFlowManager : ICreatureStepFlowManager
     {
+        // TODO: Ing]ject state management
+        private States _state = States.Initailized;
+
+        // Injected
         private readonly ICorePropertiesManager _corePropertiesManager;
         private readonly ICalculationManager _calculationManager;
         private readonly ISpecialProperitesManager _specialProperitesManager;
@@ -31,9 +35,6 @@ namespace Server.Managers.Implementations
         /// </summary>
         public void Execute()
         {
-            // Validation.
-            // TODO: Validate object
-
             // Creation.
             _corePropertiesManager.SetName();
             _corePropertiesManager.SetSize();

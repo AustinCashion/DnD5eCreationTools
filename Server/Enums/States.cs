@@ -1,10 +1,11 @@
 ﻿namespace Server.Enums
 {
     /// <summary>
-    /// Steps in creating a being.
+    /// States in creating a being.
     /// </summary>
-    public enum Steps
+    public enum States
     {
+        Initailized,
         Name,
         Size,
         Speed,
@@ -22,6 +23,7 @@
         SaveDCs,
         ConditionStatuses,
         DamageStatuses,
-        SpecialTraits
+        SpecialTraits,
+        Persist
     }
 }
