@@ -3,7 +3,7 @@
     /// <summary>
     /// ALignment categories.
     /// </summary>
-    public enum Alignment
+    public enum Alignments
     {
         LawfulGood,
         LawfulNeutral,

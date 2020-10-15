@@ -18,7 +18,7 @@
         SavingThrows,
         HitPoints,
         AttackBonuses,
-        REcommendedDamage,
+        RecommendedDamage,
         SaveDCs,
         ConditionStatuses,
         DamageStatuses,

@@ -3,7 +3,7 @@
     /// <summary>
     /// Ability scores.
     /// </summary>
-    public enum AbilityScore
+    public enum AbilityScores
     {
         Strength,
         Constitution,

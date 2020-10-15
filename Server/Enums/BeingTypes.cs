@@ -3,7 +3,7 @@
     /// <summary>
     /// Being type classification in DnD.
     /// </summary>
-    public enum BeingType
+    public enum BeingTypes
     {
         Humanoid,
         Undead

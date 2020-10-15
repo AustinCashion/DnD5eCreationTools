@@ -3,7 +3,7 @@
     /// <summary>
     /// Size categories.
     /// </summary>
-    public enum Size
+    public enum Sizes
     {
         Tiny,
         Small,

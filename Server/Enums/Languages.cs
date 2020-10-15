@@ -5,7 +5,7 @@
         Abyssal,
         Celestial,
         Common,
-        Deep_Speech,
+        DeepSpeech,
         Draconic,
         Dwarvish,
         Elvish,
@@ -18,7 +18,7 @@
         Orc,
         Primordial,
         Sylvan,
-        Thieves_Cant,
+        ThievesCant,
         Undercommon
     }
 }

@@ -13,12 +13,12 @@ namespace Server.Entities
         /// <summary>
         /// Ability scores of the being.
         /// </summary>
-        public Dictionary<AbilityScore, int> AbilityScores { get; private set; }
+        public Dictionary<AbilityScores, int> AbilityScores { get; private set; }
 
         /// <summary>
         /// ALignment of the being.
         /// </summary>
-        public Alignment Alignment { get; private set; }
+        public Alignments Alignment { get; private set; }
 
         /// <summary>
         /// Armor class of the being.
@@ -48,7 +48,7 @@ namespace Server.Entities
         /// <summary>
         /// Size classification of the being.
         /// </summary>
-        public Size Size { get; private set; }
+        public Sizes Size { get; private set; }
 
         /// <summary>
         /// Speed of the being.
@@ -58,7 +58,7 @@ namespace Server.Entities
         /// <summary>
         /// Creature type of the being.
         /// </summary>
-        public BeingType Type { get; private set; }
+        public BeingTypes Type { get; private set; }
 
         #endregion
 
@@ -69,7 +69,7 @@ namespace Server.Entities
         /// </summary>
         /// <param name="ability">Ability to add.</param>
         /// <param name="score">Score to add.</param>
-        public void AddAbilityScores(AbilityScore ability, int score)
+        public void AddAbilityScores(AbilityScores ability, int score)
         {
             if (!AbilityScores.ContainsKey(ability))
             {
@@ -78,10 +78,18 @@ namespace Server.Entities
         }
 
         /// <summary>
+        /// Clears the list of ability scores for the being.
+        /// </summary>
+        public void ResetAbilityScores()
+        {
+            AbilityScores.Clear();
+        }
+
+        /// <summary>
         /// Sets an alignment to the being.
         /// </summary>
         /// <param name="alignment">Alignment to set.</param>
-        public void SetAlignment(Alignment alignment)
+        public void SetAlignment(Alignments alignment)
         {
             Alignment = alignment;
         }
@@ -117,6 +125,14 @@ namespace Server.Entities
         }
 
         /// <summary>
+        /// Clears the list of languages for the being.
+        /// </summary>
+        public void ResetLanguages()
+        {
+            Languages.Clear();
+        }
+
+        /// <summary>
         /// Sets the level of the being.
         /// </summary>
         /// <param name="level">Level to set.</param>
@@ -129,7 +145,7 @@ namespace Server.Entities
         /// Sets the size to the being.
         /// </summary>
         /// <param name="size">Size to set.</param>
-        public void SetSize(Size size)
+        public void SetSize(Sizes size)
         {
             Size = size;
         }
@@ -147,7 +163,7 @@ namespace Server.Entities
         /// Sets the type to the being.
         /// </summary>
         /// <param name="type">Type to set.</param>
-        public void SetBeingType(BeingType type)
+        public void SetBeingType(BeingTypes type)
         {
             Type = type;
         }
