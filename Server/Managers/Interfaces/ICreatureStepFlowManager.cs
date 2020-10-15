@@ -3,10 +3,10 @@
     /// <summary>
     /// Manages step flow.
     /// </summary>
-    public interface IMonsterStepFlowManager
+    public interface ICreatureStepFlowManager
     {
         /// <summary>
-        /// Excutes steps to create a monster.
+        /// Excutes steps to create a creature.
         /// </summary>
         public void Execute();
     }
